@@ -2,11 +2,11 @@ from csv import DictReader
 
 
 class DataSet():
-    def __init__(self, name="train", path="fnc-1"):
+    def __init__(self, name="train", path="Data"):
         self.path = path
 
         print("Reading dataset")
-        bodies = name+"_bodies.csv"
+        bodies = "bodies.csv"
         stances = name+"_stances.csv"
 
         self.stances = self.read(stances)
