@@ -120,7 +120,7 @@ if __name__ == "__main__":
 #    np.save("features/X_testing.npy", X_test)
 #    
     predicted = [LABELS[int(a)] for a in clf.predict(X_test)]
-    test_data = pd.read_csv("Data/test_stances.csv")
+    test_data = pd.read_csv("F:/UWaterloo/MSCI641/Project/MSCI_project_milestone/Data/test_stances.csv", encoding = 'utf-8')
     test_data['Stance'] = predicted
     test_data.to_csv('answer.csv', index=False, encoding='utf-8')
     
